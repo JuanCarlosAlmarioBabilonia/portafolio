@@ -1,103 +1,119 @@
 @import url(variables.css);
 
-body {
-    background-color: var(--color-cuatro);
-}
-
-@keyframes fragmentAppear {
-    0% {
-        opacity: 0;
-        transform: translate(var(--tx), var(--ty)) rotate(var(--r)) scale(0);
-    }
-    60% {
-        opacity: 1;
-        transform: translate(calc(var(--tx) * 0.3), calc(var(--ty) * 0.3)) rotate(calc(var(--r) * 0.7)) scale(1.2);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0, 0) rotate(0) scale(1);
-    }
-}
-
-.fragment {
-    display: inline-block;
-    opacity: 0;
-    animation: fragmentAppear 1.5s forwards;
-}
-
-.fragment:nth-child(3n) { --tx: -50px; --ty: 20px; --r: -45deg; }
-.fragment:nth-child(3n+1) { --tx: 50px; --ty: -20px; --r: 45deg; }
-.fragment:nth-child(3n+2) { --tx: 0px; --ty: 50px; --r: 0deg; }
-
-.titulo {
-    display: flex;
-    justify-content: center;
-    font-size: 20vh;
-    color: var(--color-uno);
-    margin-top: 30vh;
-    margin-left: 75px;
-    font-family: "PoppinsSemiBold";
-}
-
-.buho {
-    margin-top: -100px;
-    margin-left: -205px;
-    opacity: 0;
-    animation: buhoAppear 1.5s forwards;
-    animation-delay: 2.5s; /* Ajusta este valor según la duración total de la animación de las letras */
-}
-
-.buho img {
-    width: 300px;
-    height: 300px;
-    position: relative;
-}
-
-/* Animación mejorada para el búho */
-@keyframes buhoAppear {
-    0% {
-        opacity: 0;
-        transform: translateY(-100px) rotate(-10deg) scale(0.8);
-    }
-    60% {
-        opacity: 1;
-        transform: translateY(15px) rotate(3deg) scale(1.1);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0) rotate(0) scale(1);
-    }
-}
-
-/* Animación del botón */
-@keyframes botonAppear {
-    0% {
-        opacity: 0;
-        transform: translateY(20px) scale(0.8);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
-
-.button {
-    display: flex;
-    justify-content: center;
-}
-
-.boton {
-    padding: 18px;
-    border-radius: 20px;
+body{
     background-color: var(--color-uno);
-    border: none;
-    color: var(--color-cinco);
-    font-family: "PoppinsSemiBold";
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+.img{
+    margin-left: 37vh;
+    margin-top: 12vh;
+}
+
+.img img{
+    width: 210px;
+    height: 350px;
+    border-radius: 20px;
+    margin-left: -27vh;
+    margin-top: -4vh;
+}
+
+.left{
+    /* border: 1px solid blue; */
+    width:42%;
+    height:97.5vh;
+}
+
+.container{
+    border: 1px solid var(--color-cuatro);
+    background-color: var(--color-cuatro);
+    border-radius: 20px;
+    margin-left: 28vh;
+    margin-top: 7vh;
+    box-shadow: 1px 1px 10px 10px var(--color-cuatro);
+    width: 47vh;
+    height: 83vh
+}
+
+
+.name1 p{
+    text-align: center;
+    font-family: "PoppinsBold";
+    font-size: 50px;
+    margin-top: 1vh;
+    color: var(--color-uno)
+}
+
+.name2 p{
+    text-align: center;
+    font-family: "PoppinsBold";
+    font-size: 50px;
+    margin-top: -10vh;
+    color: var(--color-uno)
+}
+
+
+.title1 h1{
+    font-family: "PoppinsBold";
+    font-size: 90px;
+    margin-top: 5vh;
+    color: var(--color-uno);
+    text-align: center;
+}
+
+.title2 h1{
+    font-family: "PoppinsBold";
+    font-size: 90px;
+    margin-top: -15vh;
+    color: var(--color-uno);
+    text-align: center;
+}
+
+.first{
+    background-color: var(--color-cinco);
+    padding-left: 5vh;
+    padding-right: 5vh;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 10px var(--color-cinco);
+    margin-top: 15vh;
+    height: 56vh
+}
+
+.first p{
+    font-family: "PoppinsRegular";
+    font-size: 25px;
+    margin-top: -6vh;
+}
+
+.text2{
+    width: 100vh;
+    margin-top: -10vh;
+    margin-left: 2vh;
+}
+
+.text2 p{
+    color: var(--color-tres);
     font-size: 20px;
-    
-    /* Animación para que aparezca después del búho */
-    opacity: 0;
-    animation: botonAppear 1s forwards;
-    animation-delay: 3.5s; /* Ajustar el tiempo según la duración del búho */
-    transform-origin: center;
+    text-align: center;
+}
+
+.header a{
+    font-family: "PoppinsSemiBold";
+    color: var(--color-uno);
+    background-color: var(--color-cinco);
+    box-shadow: 1px 1px 10px 1px var(--color-cinco);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 8vh;
 }
