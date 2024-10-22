@@ -18,7 +18,7 @@ body{
     width: 210px;
     height: 350px;
     border-radius: 20px;
-    margin-left: -27vh;
+    margin-left: -25vh;
     margin-top: -4vh;
 }
 
@@ -45,7 +45,7 @@ body{
 .name1 p{
     text-align: center;
     font-family: "PoppinsBold";
-    font-size: 50px;
+    font-size: 60px;
     margin-top: 1vh;
     color: var(--color-uno)
 }
@@ -53,7 +53,7 @@ body{
 .name2 p{
     text-align: center;
     font-family: "PoppinsBold";
-    font-size: 50px;
+    font-size: 60px;
     margin-top: -10vh;
     color: var(--color-uno)
 }
@@ -70,7 +70,7 @@ body{
 .title2 h1{
     font-family: "PoppinsBold";
     font-size: 90px;
-    margin-top: -15vh;
+    margin-top: -13vh;
     color: var(--color-uno);
     text-align: center;
 }
@@ -93,24 +93,25 @@ body{
 
 .text2{
     width: 100vh;
-    margin-top: -10vh;
+    margin-top: -9vh;
     margin-left: 2vh;
 }
 
 .text2 p{
     color: var(--color-tres);
-    font-size: 20px;
+    font-size: 26px;
     text-align: center;
 }
 
 .header a{
     font-family: "PoppinsSemiBold";
-    color: var(--color-uno);
-    background-color: var(--color-cinco);
-    box-shadow: 1px 1px 10px 1px var(--color-cinco);
-    padding: 10px;
-    border-radius: 20px;
-}
+    font-size: 25px;
+    color: var(--color-cinco);
+    padding: 11px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    }
 
 .header{
     display: flex;
@@ -120,10 +121,37 @@ body{
     margin-top: 8vh;
 }
 
+.contactos{
+    display: flex;
+    justify-content: center;
+    gap:35px;
+    margin-top: -3vh;
+}
+
+.contactos img{
+    width:50px;
+    height:50px;
+    border-radius: 35px;
+    transition: transform 0.3s ease; /* Suaviza la transición */
+}
+
+.contactos img:hover{
+    transform: scale(1.5); /* Aumenta el tamaño de la imagen */
+}
+
+.header a:hover{
+    transform: scale(1.2); /* Aumenta el tamaño de la imagen */
+}
+
+
 @media screen and (max-width: 480px) {
     .main{
         display: flex;
         flex-direction: column;
+    }
+
+    .img img{ 
+        margin-left: -26vh;
     }
 
     .left{
@@ -160,7 +188,7 @@ body{
     }
 
     .text2 p{
-        font-size: 18px;
+        font-size: 18.5px;
     }
 
     .header a{
@@ -171,7 +199,12 @@ body{
     .header{
         display: flex;
         flex-direction: column;
+        margin-top: 6vh;
         gap: 20px;
+    }
+
+    .contactos{
+        margin-top: -5vh;
     }
 }
 

@@ -1,0 +1,94 @@
+@import url(variables.css);
+
+body{
+    background-color: var(--color-uno);
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+.img{
+    margin-left: 37vh;
+    margin-top: 12vh;
+}
+
+.img img{
+    width: 210px;
+    height: 350px;
+    border-radius: 20px;
+    margin-left: -25vh;
+    margin-top: -4vh;
+}
+
+.left{
+    /* border: 1px solid blue; */
+    width:42%;
+    height:97.5vh;
+    margin-left: -5vh;
+}
+
+
+.container{
+    border: 1px solid var(--color-cuatro);
+    background-color: var(--color-cuatro);
+    border-radius: 20px;
+    margin-left: 28vh;
+    margin-top: 7vh;
+    box-shadow: 1px 1px 10px 10px var(--color-cuatro);
+    width: 47vh;
+    height: 83vh
+}
+
+
+.name1 p{
+    text-align: center;
+    font-family: "PoppinsBold";
+    font-size: 60px;
+    margin-top: 1vh;
+    color: var(--color-uno)
+}
+
+.name2 p{
+    text-align: center;
+    font-family: "PoppinsBold";
+    font-size: 60px;
+    margin-top: -10vh;
+    color: var(--color-uno)
+}
+
+.contactos{
+    display: flex;
+    justify-content: center;
+    gap:35px;
+    margin-top: -3vh;
+}
+
+.contactos img{
+    width:50px;
+    height:50px;
+    border-radius: 35px;
+    transition: transform 0.3s ease; /* Suaviza la transición */
+}
+
+.contactos img:hover{
+    transform: scale(1.5); /* Aumenta el tamaño de la imagen */
+}
+
+.right{
+    width:58%
+}
+
+.titulo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.titulo h1{
+    text-align: center;
+    font-family: "PoppinsBold";
+    font-size: 60px;
+    color: var(--color-cinco)
+}
